@@ -3,8 +3,6 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 import passport from "passport";
-// import jwt from "jsonwebtoken";
-// import jwt from "jsonwebtoken";
 
 const router = express.Router();
 
@@ -74,7 +72,7 @@ router.get("/developers/:id", async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
-// GITHUB OAuth
+
 router.get("/github", passport.authenticate("github", { scope: ["user:email"] }));
 
 router.get("/github/callback",
@@ -85,7 +83,6 @@ router.get("/github/callback",
   }
 );
 
-// GOOGLE OAuth
 router.get("/google", passport.authenticate("google", { scope: ["profile", "email"] }));
 
 router.get("/google/callback",

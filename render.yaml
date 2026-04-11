@@ -1,0 +1,10 @@
+﻿services:
+  - type: web
+    name: MzansiBuilds-Backend
+    runtime: node
+    rootDir: .
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: FRONTEND_URL
+        value: https://mzansi-builds.vercel.app

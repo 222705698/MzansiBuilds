@@ -5,7 +5,7 @@
 **Year:** 2026  
 **Student Number:** 222705698  
 
-👩🏽‍💻 Full-Stack Developer | Cape Peninsula University of Technology  
+👩🏽‍💻 Software Developer | Cape Peninsula University of Technology  
 
 ---
 
